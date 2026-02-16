@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: '/explore', label: 'Explore' },
   { href: '/dashboard', label: 'Dashboard' },
   { href: '/compare', label: 'Compare' },
+  { href: '/leaderboard', label: 'Leaderboard' },
 ]
 
 export function Navbar() {
