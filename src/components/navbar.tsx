@@ -28,6 +28,9 @@ export function Navbar() {
             <Link href="/dashboard" className="px-3 py-2 text-sm text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition">
               Dashboard
             </Link>
+            <Link href="/compare" className="px-3 py-2 text-sm text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition">
+              Compare
+            </Link>
           </div>
         </div>
 
