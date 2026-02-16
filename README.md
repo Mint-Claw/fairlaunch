@@ -81,7 +81,7 @@ If not eligible:
 
 ## 🛠️ Tech Stack
 
-- **Next.js 15** (App Router + Turbopack)
+- **Next.js 14** (App Router + Turbopack)
 - **TypeScript** — Full type safety
 - **Tailwind CSS** — Modern, responsive UI
 - **Solana Wallet Adapter** — Phantom, Solflare support
@@ -120,13 +120,17 @@ fairlaunch/
 │   │   ├── explore/page.tsx        # Browse & filter all launches
 │   │   ├── launch/[id]/page.tsx    # Launch detail + participation
 │   │   ├── dashboard/page.tsx      # User reputation dashboard
+│   │   ├── compare/page.tsx        # Side-by-side wallet comparison
+│   │   ├── leaderboard/page.tsx    # Top wallets ranked by score
 │   │   └── api/
 │   │       └── fairscore/route.ts  # FairScale API proxy (protects key)
 │   ├── components/
-│   │   ├── navbar.tsx              # Navigation with score display
+│   │   ├── navbar.tsx              # Responsive nav with score badge
 │   │   ├── providers.tsx           # Solana + wallet providers
 │   │   ├── score-card.tsx          # FairScore visualization
-│   │   └── launch-card.tsx         # Launch listing card
+│   │   ├── launch-card.tsx         # Launch listing card
+│   │   ├── error-boundary.tsx      # Error handling wrapper
+│   │   └── skeleton.tsx            # Loading skeletons
 │   ├── lib/
 │   │   ├── fairscale.ts            # FairScale API client & utilities
 │   │   ├── mock-launches.ts        # Demo launch data
@@ -134,6 +138,7 @@ fairlaunch/
 │   └── types/
 │       └── index.ts                # TypeScript interfaces
 ├── .env.example
+├── vercel.json
 ├── next.config.mjs
 ├── tailwind.config.ts
 └── package.json
@@ -156,6 +161,16 @@ fairlaunch/
 - Tier progress visualization
 - Score improvement tips
 - Wallet lookup tool
+
+### 🏆 Leaderboard
+- Top wallets ranked by FairScore
+- Transaction count, active days, tier breakdown
+- Visual score bars
+
+### ⚖️ Wallet Comparison
+- Compare up to 4 wallets side by side
+- Full metric breakdown table
+- Visual score bars for quick comparison
 
 ## 🗺️ Roadmap
 
